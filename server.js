@@ -21,7 +21,7 @@ mongoose.connect('mongodb://localhost:27017/test',function(err,db){
  app.use(express.static('.'));
 
 app.get('/', function (req, res) {
-    res.send({'my first express application!'});
+    res.send( 'learning heroku');
 });
  app.get('/fillForm', function (req, res) {
      console.log("form print")
