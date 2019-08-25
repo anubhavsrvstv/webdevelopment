@@ -95,7 +95,7 @@ app.delete('/deleteData', function (req, res) {
 });
 
      const port = process.env.PORT;{
-    console.log("server started on port no.7550");
+    console.log("server started");
  };
 
 
