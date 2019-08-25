@@ -1,0 +1,63 @@
+<style>
+    table,
+    th,
+    td {
+        border: 10px solid white;
+    }
+</style>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+    <form action="/saveData" method="POST" style="padding-left: 500px; padding-top: 150px;">
+
+        <h1>Name:</h1>
+        <textarea type="text" name="name">
+
+</textarea>
+
+        <h1>age:</h1>
+        <textarea type="number" name="age">
+
+</textarea>
+
+
+
+
+        </select>
+        <br>
+        <br><br>
+        <input type="submit">
+        <!-- <input type="reset" value="Reset"> -->
+    </form>
+
+
+    </head>
+
+    <body>
+        <h1>DASHBOARD</h1>
+        <table action="/getData" method="GET" style="padding-left: 500px; padding-top: 150px;" >
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <!-- <th>Address</th> -->
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+
+
+
+
+
+    </body>
+
+</html>
