@@ -3,6 +3,8 @@ var app = express();
 var mongoose = require('mongoose');
 
 var bodyparser = require('body-parser');
+const port = process.env.PORT||7550;
+
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
 
@@ -93,9 +95,10 @@ app.delete('/deleteData', function (req, res) {
 
 });
 
-     const port = process.env.PORT;{
-    console.log("server started");
- };
+
+var server = app.listen(port, function () {
+    console.log("server started on port....."+port);
+ });
 
 
 
