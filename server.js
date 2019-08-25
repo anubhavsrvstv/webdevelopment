@@ -3,7 +3,6 @@ var app = express();
 var mongoose = require('mongoose');
 
 var bodyparser = require('body-parser');
-const port = process.env.PORT;
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
 
