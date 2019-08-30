@@ -3,7 +3,7 @@ var app = express();
 var bodyparser = require('body-parser');
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended:true}));
-const port = process.env.PORT;
+const port = process.env.PORT||5555;
 const mongoose = require('mongoose');
 var mydb;
 
@@ -26,7 +26,7 @@ app.get('/', function (req, res) {
 
 app.get('/register', function (req, res) {
     console.log("form print")
-    res.sendFile(__dirname + '/note.html');
+    res.sendFile(__dirname + '/notepad.html');
 });
 
 app.post('/form_data', function (req, res) {
